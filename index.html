@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="gb2312">
+    
+    <title>南北朝</title>
+    <link rel="icon" type="image/x-icon" href="icons/ll.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hueman">
+<meta property="og:url" content="http://ppoffice.github.io/index.html">
+<meta property="og:site_name" content="Hueman">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hueman">
+    
+
+    
+        <link rel="alternate" href="/" title="Hueman" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="libs/source-code-pro/styles.css">
+<link rel="stylesheet" href="css/mdui.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="libs/jquery/2.0.3/jquery.min.js"></script>
+	
+    
+    
+        <link rel="stylesheet" href="libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="libs/justified-gallery/justifiedGallery.min.css">
+    
+ <style>
+ #clock{color:rgba;}
+.STYLE3 {font-weight: bold; font-size: large; }
+.STYLE5 {font-size: x-small}
+a{text-decoration:none;}
+</style>   
+    
+<script type="text/javascript">
+    function theWeek() {
+        var totalDays = 0;
+        now = new Date();
+        years = now.getYear()
+        if (years < 1000) years += 1900
+        var days = new Array(12);
+        days[0] = 31;
+        days[2] = 31;
+        days[3] = 30;
+        days[4] = 31;
+        days[5] = 30;
+        days[6] = 31;
+        days[7] = 31;
+        days[8] = 30;
+        days[9] = 31;
+        days[10] = 30;
+        days[11] = 31;
+     
+        //判断是否为闰年，针对2月的天数进行计算
+        if (Math.round(now.getYear() / 4) == now.getYear() / 4) {
+            days[1] = 29
+        } else {
+            days[1] = 28
+        }
+ 
+        if (now.getMonth() == 0) {
+            totalDays = totalDays + now.getDate();
+        } else {
+            var curMonth = now.getMonth();
+            for (var count = 1; count <= curMonth; count++) {
+                totalDays = totalDays + days[count - 1];
+            }
+            totalDays = totalDays + now.getDate();
+        }
+      
+    }
+</script>
+
+</head>
+
+<body >
+	<div id="liveclock" style="color:#CCCCCC; font-size:14px; background:#000000; " ></div>
+	<script type="text/javascript">
+    function timeprint(){
+	    var week; 
+		var date;
+		var today=new Date();
+		var year=today.getFullYear();
+		var month=today.getMonth()+1;
+		var day=today.getDate();
+		var ss=today.getDay();
+		var hours=today.getHours();
+		var minutes=today.getMinutes();
+		var seconds=today.getSeconds();
+		date=year+"年"+month+"月"+day+"日 ";
+		if(ss==0) week="星期日";
+		if(ss==1) week="星期一";
+		if(ss==2) week="星期二";
+		if(ss==3) week="星期三";
+		if(ss==4) week="星期四";
+		if(ss==5) week="星期五";
+		if(ss==6) week="星期六";
+		if(minutes<=9) minutes="0"+minutes;
+		if(seconds<=9) seconds="0"+seconds;
+		myclock=date+week+" "+hours+":"+minutes+":"+seconds;
+		if(document.layers){
+		    document.layers.liveclock.document.write(myclock);
+			document.layers.liveclock.document.close();
+		}else{
+		    document.getElementById('liveclock').innerHTML=myclock;
+		}
+		setTimeout("timeprint()",1000)
+    }
+    timeprint();
+</script>
+    <div id="wrap">
+        <header id="header">
+	
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <img src="img/nbc.png"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle"><span class="STYLE5">易中天中华史--</span><span class="STYLE3"> 南朝，北朝</span></p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="https://baike.baidu.com/item/%E6%98%93%E4%B8%AD%E5%A4%A9/376446?fr=aladdin" >作者</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="litr.html">文学</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="zong.html">宗教</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="figure.html">人物</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="shijia.html">四大世家<i class="mdui-icon material-icons">&#xe313;</i></a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="shijia.html">王、谢、桓、庚</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="16.html">十六国</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" >
+        <button type="submit" class="search-form-submit"><i class="mdui-icon material-icons">&#xe38b6;</i></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="输入..." >
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/hexo-theme-hueman/',
+        CONTENT_URL: '/hexo-theme-hueman/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/hexo-theme-hueman/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <em class="page-title-link" data-url="home">首页</em>    </h1>
+</div>
+                        <div class="main-body-content">
+                            
+
+    
+    
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="#" class="archive-year"><i class="icon fa fa-calendar-o"></i>公元291年八王之乱</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2016/12/11/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/camo.jpg)" alt="Being Outside in Fresh Air &amp; How Your Body Loves It" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://ppoffice.github.io/2016/12/11/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/">0</span></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="er.html">上帝之鞭</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元439年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="er.html">汪达尔人</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+          五胡十六国终结，南北朝开始那年(439)  有一群“野蛮人  在迦太基的故址上建立了他们的王国。这些原本居住在西班牙的汪达尔人(Vandals) 是渡过直布罗陀海峡来到北非的。经过十年的征战，他们夺得罗马帝国阿非利加行省的大部，并有了自己的国        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2016/12/11/Take-a-Deep-Breath-and-Just-Be/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/8.jpg)" alt="Take a Deep Breath and Just Be" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://ppoffice.github.io/2016/12/11/Take-a-Deep-Breath-and-Just-Be/">0</span></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="god.html">永嘉之乱</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元291年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="god.html">八王之乱</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+             291-306八王之乱
+
+楚王司马玮
+
+汝南王司马亮
+
+赵王司马伦
+
+齐王司马冏
+
+成都王司马颖
+
+河间王司马颙
+
+长沙王司马义
+
+东海王司马越        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2016/07/08/MathJax-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/flash.jpg)" alt="MathJax Example" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://ppoffice.github.io/2016/07/08/MathJax-Example/">0</span></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="wuhu.html">永嘉之乱</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元304年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="wuhu.html">五胡乱华</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+         304-439五胡乱华
+
+衣冠南渡        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2016/07/08/Gallery-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/fj.png)" alt="Gallery Example" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://ppoffice.github.io/2016/07/08/Gallery-Example/">0</span></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="feishui.html">淝水之战</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元383年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="feishui.html">氐人苻坚</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+                                                    那么，石勒没做到的，苻坚 为什么能做到？ 因为他对汉文化的热情更高。八岁时，苻坚就提出要请老师教书，这让他的祖父喜出望外。祖父说，我们戎狄本是异类，从来就只知道喝酒，你这小子倒要读书！于是大加赞赏欣然同意，苻坚也成为汉学家。据说他到太学视察时，提出的问题往往连五经博士都回答不了。 这可真是胡人中的汉人。 汉学家苻坚不但自己喜欢读书，还让其他人也学习汉文化。苻坚攻下代国后，便把被俘的代王送进了太学。        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2016/01/31/Chinese-Test/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/nan.jpg)" alt="中文测试" class="thumbnail-image"></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="nanchao.html">南朝</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元420年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="nanchao.html">宋齐梁陈</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+             刘裕
+
+420建宋
+
+萧道成
+
+兖州刺史，在内乱中养成势力，479建齐
+
+萧衍
+
+雍州刺史，502建梁，信佛
+
+陈霸先
+
+梁朝大将，灭侯景叛军，557建陈        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary rtl">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2016/01/30/Arabic-Test/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/mountain.jpg)" alt="?????? ????? ???????" class="thumbnail-image"></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="beichao.html">北朝</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元386年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="beichao.html">北魏、东魏、西魏、北周</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+           北魏
+
+386道武帝拓拔珪建代国，同年四月改国号为魏，太武帝拓拔焘，439灭北凉统一北方，结束五胡乱华
+
+东魏
+
+534孝静帝元善见
+
+西魏
+
+535文帝元宝炬
+
+北齐
+
+550文宣帝高洋   </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+        
+            </div></section>
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/hexo-theme-hueman/archives/2015" class="archive-year"><i class="icon fa fa-calendar-o"></i>2015</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2015/03/10/Table-of-Contents-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/gw.jpg)" alt="Table of Contents Example" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://ppoffice.github.io/2015/03/10/Table-of-Contents-Example/">0</span></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="sui.html">一统</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">公元581年</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="sui.html">581杨坚</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+         继承北周吞并南陈建        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/hexo-theme-hueman/2015/02/03/Independent-Artists-Make-Their-Own-Way-Without-Big-Record-Labels/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/wang.jpg)" alt="Independent Artists Make Their Own Way Without Big Record Labels" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://ppoffice.github.io/2015/02/03/Independent-Artists-Make-Their-Own-Way-Without-Big-Record-Labels/">0</span></span></a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="lyrics.html">听</a>
+            </div>
+            <div class="date"><time datetime="2018" itemprop="datePublished">2018-05-02</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="lyrics.html">三非焉罪</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+               非吾小天下，才高而已；非吾纵古今，时赋而已；非吾睨九州，宏观而已；三非焉罪？无梦至胜。        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+
+    </div></section>
+
+
+    <nav id="page-nav">
+        <span class="pages">没有第二页</span>
+        <span class="page-number current">1</span><a class="page-number" href="/hexo-theme-hueman/page/2/">2</a><a class="extend next" rel="next" href="/hexo-theme-hueman/page/2/">&raquo;</a>    </nav>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a  href="#"class="sidebar-toggle" title="展开"><i class="mdui-icon material-icons">&#xe409;</i></a>
+    <div class="sidebar-top">
+        <p>戳&nbsp;&nbsp;&nbsp;&nbsp;我:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a  title="地图" href="map.html" >
+                        <i class="mdui-icon material-icons">&#xe0c8;</i>                    </a>                </li>
+				  <li>
+                    <a  title="下载" href="SublimeText_windows.rar" >
+                        <i class="mdui-icon material-icons">&#xe2c4;</i>                    </a>                </li>
+				  <li>
+                    <a  title="友情链接" href="fr.html" >
+                        <i class="mdui-icon material-icons">&#xe7f2;</i>                    </a>                </li>
+				  <li>
+                    <a  title="音乐" href="lyrics.html" >
+                        <i class="mdui-icon material-icons">&#xe405;</i>                    </a>                </li>
+				  <li>
+                    <a  title="登录" href="log.html" >
+                        <i class="mdui-icon material-icons">&#xe8a6;</i>                    </a>                </li>
+				  <li>
+                    <a  title="电子邮箱" href="mailto:pxo@hlju.edu.cn; 1879269822@qq.com ?cc=1@2.3.c&bcc=2@3.4.c&subject=hello&body=welcome" >
+                        <i class="mdui-icon material-icons">&#xe158;</i>                    </a>                </li>
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">事件</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/12/11/Being-Outside-in-Fresh-Air-and-How-Your-Body-Loves-It/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/camo.jpg)" alt="Being Outside in Fresh Air &amp; How Your Body Loves It" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="er.html">上帝之鞭</a></p>
+                            <p class="item-title"><a href="er.html" class="title">汪达尔人</a></p>
+                            <p class="item-date"><time datetime="2018" itemprop="datePublished">公元439年</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/12/11/Take-a-Deep-Breath-and-Just-Be/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/8.jpg)" alt="Take a Deep Breath and Just Be" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="god.html">永嘉之乱</a></p>
+                            <p class="item-title"><a href="god.html" class="title">八王之乱</a></p>
+                            <p class="item-date"><time datetime="2018" itemprop="datePublished">公元291年</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/07/08/MathJax-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/flash.jpg)" alt="MathJax Example" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="wuhu.html">永嘉之乱</a></p>
+                            <p class="item-title"><a href="wuhu.html" class="title">五胡乱华、衣冠南渡</a></p>
+                            <p class="item-date"><time datetime="2018" itemprop="datePublished">公元304年</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/07/08/Gallery-Example/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/fj.png)" alt="Gallery Example" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="feishui.html">淝水之战</a></p>
+                            <p class="item-title"><a href="feishui.html" class="title">苻坚VS谢安</a></p>
+                            <p class="item-date"><time datetime="2018" itemprop="datePublished">公元383年</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/hexo-theme-hueman/2016/01/31/Chinese-Test/" class="thumbnail">
+    
+    
+        <span style="background-image:url(img/fxy.png)" alt="中文测试" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="nanchao.html">南北朝</a></p>
+                            <p class="item-title"><a href="nanchao.html" class="title">民族交融</a></p>
+                            <p class="item-date"><time datetime="2018" itemprop="datePublished">公元386年</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">类别</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Language/">文学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/LifeStyle/">宗教</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Music/">人物</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Technology/">四大世家</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/hexo-theme-hueman/categories/Technology/Github/">王、谢、桓、庚</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">年份</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2016/12/">公元291年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2016/07/">公元304年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2016/01/">公元317年</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2015/03/">公元386年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2015/02/">公元413年</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2015/01/">公元420年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/hexo-theme-hueman/archives/2014/12/">公元581年</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/hexo-theme-hueman/tags/Research/">搜索</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo-theme-hueman/tags/markdown/">标记</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">云标签</h3>
+        <div class="widget tagcloud">
+            <a href="/hexo-theme-hueman/tags/Research/" style="font-size: 10px;">搜索</a> <a href="/hexo-theme-hueman/tags/markdown/" style="font-size: 20px;">标记</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/hexo-theme-hueman/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 PPOffice</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="js/main.js"></script>
+
+    </div>
+</body>
+</html>
