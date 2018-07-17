@@ -1,0 +1,94 @@
+body{
+    background: url("../img/bg.jpg");
+}
+
+#header{
+    margin-top: 10px;
+    height:50px;
+    /*background-color: #373277;*/
+    line-height: 50px;
+    font-size:17px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background: url("../img/bg.jpg");
+}
+#logo{
+    position: relative;
+    float: left;
+}
+#header img{
+     border-radius: 29px;
+     width:50px;
+     height: 50px;
+     background-size: 50px 50px;
+     display:block;
+ }
+#quick-list{
+    /*display: inline-block;*/
+    margin-right: auto !important;
+}
+#header li{
+    /*font-weight: bold;*/
+    position: relative;
+    display: block;
+    float: left;
+    padding: 0 14px;
+}
+#header a{
+    /*opacity: 0.8;*/
+    color: #c5d0df;
+}
+#header a:hover{
+    color: #fff;
+}
+#search-in{
+    padding: 0 14px;
+    height:45px;
+    float: left;
+    border-bottom: 1px solid #c5d0df;
+}
+#search-input .search-tool{
+    position: relative;
+    display:inline-block;
+    direction: ltr;/*默认值*/
+    margin: 0;
+    padding:0;
+    border:none;
+    outline:0;
+    font-weight:inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+#search-input{
+    background: 0 0;
+    font-size: inherit;/*继承*/
+    color: #fff;
+    outline: 0;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#log-in{
+    position: relative;
+    float:right;
+
+}
+#show{
+    height: 400px;
+    /*width:100px;*/
+    /*padding-top: 100px;*/
+
+    color:#c5d0df ;
+}
+#show p{
+    padding: 70px 30px 0 60px;
+    text-align: center;
+    font-size: 45px;
+    /*font-family: Vani,"叶根友毛笔行书2.0版";*/
+    font-family: "方正兰亭超细黑简体";
+
+}
+
+
