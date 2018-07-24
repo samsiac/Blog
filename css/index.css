@@ -18,9 +18,9 @@ body{
     float: left;
 }
 #header img{
-     border-radius: 29px;
-     width:50px;
-     height: 50px;
+     border-radius: 33px;
+     width:55px;
+     height: 55px;
      background-size: 50px 50px;
      display:block;
  }
@@ -88,7 +88,36 @@ body{
     font-size: 45px;
     /*font-family: Vani,"叶根友毛笔行书2.0版";*/
     font-family: "方正兰亭超细黑简体";
-
+}
+#connect{
+    background-color: #ddd;
+    height:80px;
+}
+#view-wall{
+    height: 600px;
+    background-color: #fff;
+}
+#menu{
+    width:120px;
+    border: 1px solid;
+    position:absolute;
+    background-color: #fff;
+    display: none;
+}
+#menu li{
+    width:120px;
+    height:30px;
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+    border-bottom:1px dashed #ccc;
+    cursor:pointer;
+}
+#menu li:last-child{
+    border-bottom: none;
+}
+#menu li:hover{
+    background-color: #ccc;
 }
 
 
