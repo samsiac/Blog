@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>墙头满天飞</title>
-    <link rel="icon" type="image/x-icon" href="img/xu.ico">
+    <title>墙头</title>
+    <link rel="icon" type="image/x-icon" href="img/huae.ico">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
@@ -12,7 +12,7 @@
 <body>
 <div id="header">
     <div class="wrapper">
-        <div id="logo"><img src="img/icon-above-font%20(2).png" alt=""></div>
+        <div id="logo"><img src="img/siamsia-above.png" alt=""></div>
            <div id="quick-list">
                <ul>
                <li><a href="">首页</a></li>
@@ -21,7 +21,7 @@
                <li><a href="">脆皮鸭</a></li>
                <li><a href="" title="汪狗专用">明藏</a></li>
                <li><a href="" title="霹雳/金光">布袋戏</a></li>
-               <li><a href="">听</a></li>
+               <li><a href="" title="Sia">听</a></li>
                </ul>
            </div>
         <div id="search-in">
@@ -50,5 +50,34 @@
     <p style="font-size: 55px;">物有本末，事有终始。</p>
     </div>
 </div>
+<div id=connect></div>
+<div id="view-wall"></div>
+<ul id="menu">
+    <li>菜单1</li>
+    <li>菜单2</li>
+    <li>菜单3</li>
+    <li>菜单4</li>
+    <li>菜单5</li>
+</ul>
+<script>
+    var oMenu = document.getElementById('menu');
+    var aLi = oMenu.getElementsByTagName('li');
+
+    document.oncontextmenu = function(ev){
+        ev = ev || window.event;
+        oMenu.style.display = 'block';
+        oMenu.style.left = ev.clientX + 'px';
+        oMenu.style.top = ev.clientY + 'px';
+        return false;
+    }
+    document.onclick = function(){
+        oMenu.style.display = 'none';
+    };
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].onclick = function(){
+            alert(this.innerHTML);
+        };
+    }
+</script>
 </body>
 </html>
