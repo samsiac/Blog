@@ -3,7 +3,7 @@ body{
 }
 
 #header{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     height:50px;
     /*background-color: #373277;*/
     line-height: 50px;
@@ -28,12 +28,41 @@ body{
     /*display: inline-block;*/
     margin-right: auto !important;
 }
+
 #header li{
     /*font-weight: bold;*/
     position: relative;
     display: block;
     float: left;
     padding: 0 14px;
+}
+#quick-list .submenu{
+     position:absolute;
+    top:50px;
+    left:-1px;
+    width:98px;
+    border-style:solid;
+    border-color:#000;
+    boeder-width:0 1px 1px 1px;
+    /*padding:0 14px;*/
+    display:none;
+    background-color: #000;
+    text-align: center;
+    /*color:#000;*/
+ }
+#quick-list .submenu li{
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+}
+#quick-list .menu:hover{
+    background-color: #000;
+}
+#quick-list .menu:hover .submenu{
+    display: block;
+}
+#quick-list .submenu a:hover{
+    color: #fff;
 }
 #header a{
     /*opacity: 0.8;*/
@@ -79,8 +108,12 @@ body{
     height: 400px;
     /*width:100px;*/
     /*padding-top: 100px;*/
-
+/*background: url("../img/ztai.jpg");*/
     color:#c5d0df ;
+}
+#show img{
+    width:1519px;
+    height:390px ;
 }
 #show p{
     padding: 70px 30px 0 60px;
@@ -117,7 +150,7 @@ body{
     border-bottom: none;
 }
 #menu li:hover{
-    background-color: #ccc;
+    background-color: #20549f;
 }
 
 
