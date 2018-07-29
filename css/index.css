@@ -122,6 +122,14 @@ body{
     /*font-family: Vani,"叶根友毛笔行书2.0版";*/
     font-family: "方正兰亭超细黑简体";
 }
+#show i{
+    width: 28px;
+    height:45px;
+  margin: 280px 50% 5px 50%;
+}
+#show .fas{
+    font-size: 26px;
+}
 #connect{
     background-color: #ddd;
     height:80px;
