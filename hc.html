@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML和CSS的关系</title>
+    <style type="text/css">
+        <!--
+
+        表现-- >
+        h1 {
+            font-size: 12px;
+            color: #930;
+            text-align: center;
+        }
+    </style>
+</head>
+<!--【语义化：1.容易被搜索引擎收录2.易于屏幕阅读器读出网页内容
+    span无语义，用于设置单独样式；div栏目板块作为容器
+    ·实体：特殊符号表示（转义字符）eg:&实体名称; &lt;&gt;&nbsp;&copy;
+    non-breaking space
+    <header>头部标签
+    <section>区域标签eg.网站专栏
+    <footer>底部标签
+    <aside>侧边栏
+    【效果标签：
+    1.空标签<br />换行<hr />水平线<img />图像一个空格
+    【列表
+    <ol><li></li>*n</ol>
+    <ul>无序标签
+    【图片，链接，表格
+    <img src="图片地址(同一路径可直接写文件名）" alt="下载失败时的替换文本（用于搜索引擎识别收录）" title="提示文本" />
+    <a href="链接" title="click here">点击内容</a>
+    <a href="网址" target="_self/_blank">content</a> target属性，_self在当前页面打开，_blank在新窗口打开
+    <table border="1">
+        <caption>表格标题</caption>
+        <tr>    //tr为一行;th为一列，字体加粗;td为一列正常字体;border属性为表格添加边框，属性值为数字
+            <th>list1</th>
+            <th>list2</th>
+        </tr>
+        <tr>
+            <td>cont1</td>
+            <td>cont2</td>
+        </tr>
+    </table>
+    <thead></thead>表头
+    <tbody></tbody>此功能市其按结构显示，不必等表格加载完后显示
+    <tfoot></tfoot>页脚
+    【表单，用户交互
+    //text,password,submit,reset,number,url,email
+    <form method="get/post" action="服务器文件">
+    <label for="username/pass">用户名:</label>
+    <input type="text/password" name="username/pass" />
+    </from>
+
+    <form>
+        <input type="text/password" name="名称" value="文本" />
+    </form>
+
+    <input type="text" placeholder="请输入关键字">占位符
+
+    <input type="number">除数字外，其他字符无效
+    <input type="url">网址输入框
+    <input type="email">必含@及之后内容
+    <form method="post" action="save.php">
+        <label>联系我们</label>
+        <textarea cols="50" rows="10">在这里输入内容...</textarea>
+    </from>
+    <label for="控件id名称">
+    ·单选复选框
+    <input type="radio单选/checkbox复选" value提交数据到服务器到后台PHP使用="值" name为控件命名，以备ASP，PHP使用="名称" checked="checked默认选中" />
+    ·下拉菜单
+    <form>
+        <select>
+            <option value="读书"向服务器提供的值>读书</option>
+            <option value="运动" selected="selected">运动</option>
+        </select>
+    </from>
+    ·提交按钮
+    <input type="submit" value="提交" name="submitBtn">
+=======================================================================
+    CSS
+    【添加样式
+    【选择器
+    【继承，优先级，重要性
+    【字体样式
+    【文本样式
+    【盒模型
+    【布局模型
+    【flex弹性盒模型
+    【小技巧
+    -->
+<body>
+    <h1>使用 HTML 来创建站点</h1>
+    <header>我是头部标签</header>
+    <img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" title="电影介绍">
+    <section>我是区域标签</section>
+    <ul><li>我的第一个列表信息</li></ul>
+    <ul><li>我的第一个列表信息</li></ul>
+    <div>
+        <p>当特殊的样式需要应用到个别<a href="http://www.m1905.com/mdb/star/3316/" title="click here">元素</a>时，就可以使用内联样式</p>
+    </div>
+    <a href="https://www.sina.com.cn" target="_self">新浪</a>
+    <a href="https://www.baidu.com" target="_blank">百度</a>
+    <aside>我是侧边栏</aside>
+    <footer>我是底部标签</footer>
+    <table border="1">
+        <caption>前端三剑</caption>
+        <tr>
+            <th>知识点</th>
+            <th>重要程度</th>
+            <th>难度</th>
+            <th>学习周期</th>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>5星</td>
+            <td>3星</td>
+            <td>7天</td>
+        </tr>
+        <tr>
+            <td>css</td>
+            <td>5星</td>
+            <td>4星</td>
+            <td>10天</td>
+        </tr>
+        <tr>
+            <td>js</td>
+            <td>5星</td>
+            <td>5星</td>
+            <td>20天</td>
+        </tr>
+    </table>
+    <table border="1">
+        <p>成绩表</p>
+        <hr />
+
+        <thead>
+        <th>科目</th>
+        <th>分数</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>语文</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>数学</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <td>总分</td>
+        <td>159</td>
+        </tfoot>
+    </table>
+    <form method="post" action="save.php">
+        <label for=" username">用户名:</label>
+        <input type="text" name="username" id="username" value="" />
+        <label for="pass">密码:</label>
+        <input type="password" name="pass" id="pass" vlaue="" />
+        <input type="submit" value="确定" name="submit" />
+        <input type="reset" value="重置" name="reset" />
+    </form>
+    <form>
+        姓名：
+        <input type="text" name="myName" />
+        <br />
+        密码：
+        <input type="password" name="pass" />
+        <label>联系我们</label>
+        <textarea cols="10" rows="10">请在这里输入内容...</textarea>
+    </form>
+    <input type="text" placeholder="请输入用户名" />
+    <input type="password" placeholder="请输入密码" />
+    <input type="number" placeholder="请输入数字" />
+    <input type="url" placeholder="请输入网址" />
+    <input type="email" placeholder="请输入邮箱" />
+    <form>
+        <label for="username">输入你的用户名</label>
+        <input type="text" id="username" placeholder="Enter uname">
+        <label for="password">输入你的密码</label>
+        <input type="password" id="password" placeholder="Enter password">
+    </form>
+    <form action="save.php" method="post">
+        <label>性别:</label>
+        <label>男</label>
+        <input type="radio" value="1" name="gender" />
+        <label>女</label>
+        <input type="radio" value="2" name="gender" checked="checked" />
+        <br />
+        你对哪些运动感兴趣？<br />
+        <input type="checkbox" name="checkbox1" value="跑步" checked="checked"> 跑步
+        <input type="checkbox" name="checkbox2" value="打球"> 打球
+        <input type="checkbox" name="checkbox3" value="登山" checked="checked"> 登山
+        <input type="checkbox" name="checkbox4" value="健身" checked="checked"> 健身
+    </form>
+    <form action="save.php" method="post">
+        <label>爱好:</label>
+        <select>
+            <option value="看书">看书</option>
+            <option value="旅游" selected="selected">旅游</option>
+            <option value="运动">运动</option>
+            <option value="购物">购物</option>
+        </select>
+    </form>
+</body>
+</html>
